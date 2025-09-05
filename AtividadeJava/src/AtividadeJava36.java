@@ -6,7 +6,7 @@ public class AtividadeJava36 {
             int numero = leia.nextInt();
             int fatorial = numero, count = 1;
             while (count < numero) {
-                fatorial *= (numero - count);//fatorial = fatorial * (numero - count)
+                fatorial *= (numero - count);
                 System.out.println(numero + "! = " + (fatorial / (numero - count)) + "*" + (numero - count) + "=" + fatorial);
                 count++;
             }
