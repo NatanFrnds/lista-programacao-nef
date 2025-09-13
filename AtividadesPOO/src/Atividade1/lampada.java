@@ -18,17 +18,16 @@ public class lampada {
         this.cor = cor;
     }
 
-    public boolean getLigar() {
-        return !this.ligada;
+    public String getLigada () {
+    if (this.ligada == true) {
+        return "ligada";
+    }else  {
+        return "Desligada";
+    }
     }
 
     public void setLigar() {
         this.ligada = true;
-    }
-
-
-    public boolean getDesligar() {
-        return this.ligada;
     }
 
     public void setDesligar() {
@@ -40,34 +39,34 @@ public class lampada {
     }
 
     public void setreduzirBrilho(int valor) {
-        if ((this.brilho-valor) < 0) {
-            valor=0;
-            this.brilho =valor;
+        if ((this.brilho - valor) < 0) {
+            valor = 0;
+            this.brilho = valor;
         } else {
-            this.brilho =valor;
+            this.brilho -= valor;
         }
     }
 
-public void setaumentarBrilho(int valor) {
-    if ((this.brilho+valor) > 100) {
-        valor=100;
-        this.brilho =valor;
-    } else {
-        this.brilho =valor;
+    public void setaumentarBrilho(int valor) {
+        if ((this.brilho + valor) > 100) {
+            valor = 100;
+            this.brilho = valor;
+        } else {
+            this.brilho += valor;
+        }
     }
 
-}
+    public String getCor() {
+        return this.cor;
+    }
 
-public String getCor() {
-    return this.cor;
-}
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
 
-public void setCor(String cor) {
-    this.cor = cor;
-}
+    public void falar() {
+        System.out.println("\n Á lampada está:"+getLigada()+"\n seu brilho é: " + getBrilho() + "\n Sua cor é: " + getCor() );
+    }
 
-public void falar() {
-    System.out.println(getLigar());
-}
 
 }
