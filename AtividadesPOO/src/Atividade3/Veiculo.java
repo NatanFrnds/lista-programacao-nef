@@ -4,20 +4,20 @@ public class Veiculo {
     private String marca;
     private String modelo;
     private double velocidade;
-    String Descricao;
+    String descricao;
 
     public Veiculo() {
         this.marca = "Chevrolet";
         this.modelo = "Vectra";
         this.velocidade = 190;
-        this.Descricao = "Luxo anos 2000";
+        this.descricao = "Luxo anos 2000";
     }
 
-    public Veiculo(String marca, String modelo, double velocidade, String Descricao) {
+    public Veiculo(String marca, String modelo, double velocidade, String descricao) {
         this.marca = marca;
         this.modelo = modelo;
         this.velocidade = velocidade;
-        this.Descricao = Descricao;
+        this.descricao = descricao;
     }
 
     public String getMarca() {
@@ -60,11 +60,11 @@ public class Veiculo {
         this.velocidade -= frear;
     }
 
-    public String descricao() {
-        return this.descricao();
+    public String getDescricao() {
+        return this.descricao;
     }
 
-    public void descricao(String descricao) {
-        this.Descricao = descricao;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }
