@@ -3,19 +3,28 @@ package Atividade4;
 public class Vendedor extends Funcionario {
     double comissao;
 
-    public Vendedor(){
+    public Vendedor() {
         super();
         this.comissao = 0;
     }
 
-    public Vendedor(String nome, double salarioBase, double comissao) {
-        super(nome, salarioBase);
-        this.comissao=comissao;
+    public Vendedor(String nome) {
+      super(nome);
+    }
+
+
+    public double getComissao() {
+        return this.comissao;
     }
 
     public void setComissao(double comissao) {
         this.comissao = comissao;
-        super.setcalcularPagamento(getSalarioBase()+comissao);
+    }
+
+    @Override
+    public double getcalcularPagamento() {
+        final double salarioBase = super.getSalarioBase();
+        return salarioBase+this.comissao;
     }
 
 }

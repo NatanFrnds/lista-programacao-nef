@@ -6,12 +6,12 @@ public class Funcionario {
 
     public Funcionario() {
         this.nome = "";
-        this.salarioBase = 0;
+        this.salarioBase = 1200.0;
     }
 
-    public Funcionario(String nome, double salarioBase) {
+    public Funcionario(String nome) {
         this.nome = nome;
-        this.salarioBase = salarioBase;
+        this.salarioBase = 1200.0;
     }
 
 
