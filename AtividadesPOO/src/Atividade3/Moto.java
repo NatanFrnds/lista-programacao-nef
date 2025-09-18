@@ -6,10 +6,6 @@ public class Moto extends Veiculo {
     public Moto() {
         super();
         this.cilindradas = 125;
-        this.setMarca(getMarca());
-        this.setModelo(getModelo());
-        this.setVelocidade(getVelocidade());
-        this.setDescricao(getDescricao());
     }
 
     public Moto(String marca, String modelo, double velocidade, String descricao, int cilindradas) {
@@ -28,12 +24,10 @@ public class Moto extends Veiculo {
 
     @Override
     public void setMarca(String marca) {
-
         super.setMarca(marca);
     }
 
     public void setModelo(String modelo) {
-
         super.setModelo(modelo);
     }
 

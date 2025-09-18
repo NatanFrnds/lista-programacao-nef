@@ -56,7 +56,7 @@ public class Veiculo {
         return this.velocidade;
     }
 
-    public void frear(double frear) {
+    public void setfrear(double frear) {
         this.velocidade -= frear;
     }
 
