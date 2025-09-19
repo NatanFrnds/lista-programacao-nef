@@ -2,11 +2,11 @@ package Atividade4;
 
 
 public class Gerente extends Funcionario {
-    double comissao;
+    double bonus;
 
     public Gerente() {
         super();
-        this.comissao = 0;
+        this.bonus = 0;
     }
 
     public Gerente(String nome) {
@@ -14,18 +14,18 @@ public class Gerente extends Funcionario {
     }
 
 
-    public double getComissao() {
-        return this.comissao;
+    public double getBonus() {
+        return this.bonus;
     }
 
-    public void setComissao(double comissao) {
-        this.comissao = comissao;
+    public void setComissao(double bonus) {
+        this.bonus = bonus;
     }
 
     @Override
     public double getcalcularPagamento() {
         final double salarioBase = super.getSalarioBase();
-        return salarioBase+this.comissao;
+        return salarioBase+this.bonus;
     }
 
 }
